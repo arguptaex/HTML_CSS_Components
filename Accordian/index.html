@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Accordian</title>
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="item">
+        <p class="number">01</p>
+        <p class="text">How long do I have to return my chair ?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores,
+            voluptatem. Dolores quos sint aliquam ad id recusandae reiciendis,
+            quasi maiores fugit nam eveniet optio provident enim aspernatur rem
+            consectetur vel.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item">
+        <p class="number">02</p>
+        <p class="text">How long do I have to return my chair ?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores,
+            voluptatem. Dolores quos sint aliquam ad id recusandae reiciendis,
+            quasi maiores fugit nam eveniet optio provident enim aspernatur rem
+            consectetur vel.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item">
+        <p class="number">03</p>
+        <p class="text">How long do I have to return my chair ?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores,
+            voluptatem. Dolores quos sint aliquam ad id recusandae reiciendis,
+            quasi maiores fugit nam eveniet optio provident enim aspernatur rem
+            consectetur vel.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Get all accordion items
+      const accordionItems = document.querySelectorAll(".item");
+
+      // Add click event listener to each item
+      accordionItems.forEach((item) => {
+        item.addEventListener("click", function () {
+          // Toggle the "open" class on the clicked item
+          this.classList.toggle("open");
+        });
+      });
+    </script>
+  </body>
+</html>

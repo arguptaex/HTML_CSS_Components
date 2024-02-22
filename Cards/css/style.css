@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  /* border: 2px solid black; */
+  height: 100vh;
+}
+main {
+  height: 100%;
+}
+
+.container {
+  margin: auto;
+  max-width: 1400px;
+  background-color: #e9f1f7;
+  /* border: 2px solid blue; */
+  height: 100%;
+  padding: 50px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.card {
+  /* max-width: 30rem; */
+  /* margin: 10px; */
+  height: 75%;
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-position: center;
+
+  /* background-color: #8cb9b5; */
+
+  justify-content: end;
+  color: #fff;
+  /* row-gap: 20px; */
+  box-shadow: 0px 0px 5px rgba(252, 131, 75);
+}
+
+.specs {
+  /* margin: 0; */
+  background-color: rgba(252, 131, 75, 0.7);
+  padding: 30px 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-items: center;
+  text-align: center;
+  transition: all 0.5s ease;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.specs:hover {
+  padding: 50px 10px;
+}
+
+.specs h1 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.specs a:link,
+a:visited {
+  /* border: 2px solid black; */
+  border-radius: 0.5rem;
+  padding: 10px 30px;
+  background-color: #fcaf58;
+  display: none;
+  text-decoration: none;
+  color: #e9f1f7;
+  align-self: flex-end;
+}
+.specs:hover a {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .card {
+    height: 80vh;
+  }
+}
